@@ -56,7 +56,7 @@ exports.conf = {
   enabled: true,
   guildOnly: true,
   aliases: ['erkek,e'],
-  permLevel: 1,
+  permLevel: 2,
 };
 
 exports.help = {

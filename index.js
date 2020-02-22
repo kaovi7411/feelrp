@@ -88,8 +88,59 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === '!ip') {
-    msg.reply('⭐Sunucu Ip: 51.77.77.237:27016⭐');
+  if (msg.content.toLowerCase() === '!dc') {
+    msg.delete();
+    msg.reply('⭐ Discord sunucumuzun linki : https://discord.gg/6SX5ETQ  ⭐');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === '!bakım') {
+    msg.delete();
+    msg.channel.send('```⭐ Sunucuyu kısa bir süreliğine bakıma almaktayız. Anlayışınız için teşekkürler ⭐```');
+    msg.channel.send("@everyone")
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === '!restart') {
+    msg.delete();
+    msg.channel.send('⭐ Restart atlıyor. Aktif oldugunda Duyuru gecilcektir.  ⭐');
+    msg.channel.send("@everyone")
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === '!aktif') {
+    msg.delete();
+    msg.channel.send('```⚡️Sunucu Aktif Launcher üzerinden giriş yapabilirsiniz.⚡️```'); 
+    msg.channel.send("@everyone")
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === '!destek') {
+    msg.delete();
+    msg.reply('Destek bekleyen biri var !           <@&644027819617288233> <@&644027820472795186> <@&644027817272803339> <@&644027818707124255>  <@&644027818128441354>   <@&644027819323818004>   <@&644027821060128768>   <@&644027821622034432> <@&644027821949190155>   ');
+  }
+});
+
+
+client.on('message', msg => { 
+  if (msg.content.toLowerCase() === '!kayıt') { 
+    msg.delete();
+    msg.channel.send(' Kayıt olmak için <#644027866157285376> da ki linke tıklayarak formu doldurunuz.');
+    msg.channel.send(' Kabul edildiğiniz taktirde yetkililer sizi çağıracaktır.');
+    msg.channel.send(' Onaylananları <#644027867499331592> bu kanaldan takip edebilirsiniz.');
+    msg.channel.send(' Dev Roleplay İyi Roller Diler.   <@&644027851665965056>   '); 
+    
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === '!ts3') {
+    msg.delete();
+    msg.reply('```⚡️Teamspeak3 Adresimiz : devrp ⚡️```');
   }
 });
 
@@ -191,18 +242,7 @@ var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
 // });
 
 
-var oyun = [
-        "Merhaba FeelRP Sunucusu",
-        "Kaovi Tarafından Yapıldı",
 
-    ];
-
-    setInterval(function() {
-
-        var random = Math.floor(Math.random()*(oyun.length-0+1)+0);
-
-        client.user.setGame(oyun[random], "https://www.twitch.tv/kaovi");
-        }, 2 * 2500);
 
 
 ;

@@ -17,7 +17,7 @@ exports.conf = {
     enabled: true,
     guildOnly: false,
     aliases: ['isim'],
-    permLevel: 1,
+    permLevel: 2,
 }
 
 exports.help = {

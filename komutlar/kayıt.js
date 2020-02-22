@@ -56,11 +56,11 @@ exports.conf = {
   enabled: true,
   guildOnly: true,
   aliases: ['kayıt,k'],
-  permLevel: 1,
+  permLevel: 2,
 };
 
 exports.help = {
-  name: 'kayıt',
+  name: 'kayıtlı',
   description: 'Belirtilen Kişiye erkek rolü verir.',
-  usage: 'kayıt [kullanıcı] [sebep]'
+  usage: 'kayıtlı [kullanıcı] [sebep]'
 };
