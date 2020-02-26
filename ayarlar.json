@@ -1,8 +1,6 @@
 {
-
-  "prefix": "!",
+  "prefix": ".",
   "sahip": "",
-  "token": ""
-
-
+  "token": "",
+  "apikey": ""
 }
